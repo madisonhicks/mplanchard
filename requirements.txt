@@ -1,0 +1,7 @@
+alembic
+flask
+flask-admin
+flask-restful
+flask-script
+marshmallow
+sqlalchemy
