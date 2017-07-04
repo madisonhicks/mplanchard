@@ -47,4 +47,5 @@ class PostCollection(Resource):
         except ValueError:
             raise BadRequest('limit and offset must be integers')
         query = app.db.query(Post)
+        query = query.order_by(Post.created.desc())
         return Post.dump_many(query, limit=limit, offset=offset)

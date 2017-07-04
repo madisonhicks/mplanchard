@@ -1,11 +1,11 @@
-## About this Website
+# About this Website
 
 This website is a constant work-in-progress and experimentation ground. I will
 try to document its development process in the blog section as I go along.
 
-### Technologies
+## Technologies
 
-#### Backend
+### Backend
 
 * [Flask](http://flask.pocoo.org/)
 * Resource classes with [Flask-ReSTful](https://flask-restful.readthedocs.io/en/0.3.5/)
@@ -16,7 +16,7 @@ try to document its development process in the blog section as I go along.
 * Command line goodness with [flask-script](https://flask-script.readthedocs.io/en/latest/)
 * DB administration with [flask-admin](https://flask-admin.readthedocs.io/en/latest/)
 
-#### Frontend
+### Frontend
 
 * [React](https://facebook.github.io/react/)
 * Navigation with [React Router](https://github.com/ReactTraining/react-router)

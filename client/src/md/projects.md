@@ -1,4 +1,4 @@
-## Projects
+# Projects
 
 Below you'll find some of my open-source projects. You can find me on
 GitHub at [@mplanchard](https://github.com/mplanchard).
@@ -7,7 +7,7 @@ I'm a big believer in open source software, good documentation, and thorough
 testing. I welcome contributions of all sizes to any of the open source 
 projects that I have written or manage!
 
-### Open-Source: Author
+## Open-Source: Author
 
 * [PyDecor](https://github.com/mplanchard/pydecor) - easy-peasy Python decorators
 * [falcon-marshmallow](https://github.com/ihiji/falcon-marshmallow) - automatic
@@ -16,12 +16,12 @@ marshmallow (de)serialization for web requests in the Falcon framework
 package version parsing and comparison
 
 
-### Open-Source: Contributor
+## Open-Source: Contributor
 
 * [pypiserver](https://github.com/pypiserver/pypiserver) - custom Python package
 server, compatible with `pip`
 
-### Private Work
+## Private Work
 
 In addition to the public projects above, I have written a great deal of
 software for [Ihiji](https://www.ihiji.com), including the following projects:

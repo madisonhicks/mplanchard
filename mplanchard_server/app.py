@@ -15,7 +15,7 @@ from werkzeug.exceptions import Unauthorized
 
 from ._logging import configure_logging
 from . import api, flask_config
-from .config import ADMIN_TOKEN, SQLALCHEMY_DB_URL
+from .config import ADMIN_TOKEN, DEFAULT_ADMIN_TOKEN, SQLALCHEMY_DB_URL
 from .models import Post, Tag
 
 
@@ -47,6 +47,13 @@ class AdminModelView(ModelView):
     def is_accessible(self):
         """Check the token"""
         token = request.headers.get('X_AUTH_TOKEN')
+        if ADMIN_TOKEN == DEFAULT_ADMIN_TOKEN:
+            # ensure that the default admin token can only be used
+            # locally during development
+            if 'localhost' not in SQLALCHEMY_DB_URL:
+                return False
+            if 'localhost' not in request.host:
+                return False
         return token is not None and token == ADMIN_TOKEN
 
     def inaccessible_callback(self, name, **kwargs):
